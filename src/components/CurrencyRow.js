@@ -9,14 +9,17 @@ export default function CurrencyRow(props) {
         onChangeAmount
     } = props
     return (
-        <div>
+        <div className="flex">
             <input type="number" className="input" value={amount} onChange={onChangeAmount} />
-            <select value={selectCurrency} onChange={onChangeCurrency}>
-                {currencyOptions.map(option => (
-                    <option key={option} value={option}>{option}</option>
-                ))}
 
-            </select>
+            <div className="select">
+                <select value={selectCurrency} onChange={onChangeCurrency}>
+                    {currencyOptions.map(option => (
+                        <option key={option} value={option}>{option}</option>
+                    ))}
+
+                </select>
+            </div>
         </div>
     )
 }

@@ -54,7 +54,7 @@ function App() {
 
   return (
     <>
-      <h1> Convert </h1>
+      <h1> Currency Converter </h1>
       <CurrencyRow currencyOptions={currencyOptions}
         selectCurrency={fromCurrency}
         onChangeCurrency={e => setFromCurrency(e.target.value)}
